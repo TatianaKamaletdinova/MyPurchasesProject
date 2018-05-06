@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    tools:context="com.kamaltatyana.mypurchases.EditorActivity">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="4dp">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_pet_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_shop_name"
+                android:inputType="textCapWords|textAutoCorrect|textAutoComplete"
+                android:textAlignment="center" />
+
+            <!-- Breed field -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Gender category -->
+
+    <!-- Measurement category -->
+    <LinearLayout
+        android:id="@+id/container_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+
+        <!-- Input field -->
+        <LinearLayout
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <!-- Gender drop-down spinner -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Количество:"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/shop_count"
+                android:layout_width="110dp"
+                android:layout_height="34dp"
+                android:layout_above="@+id/label_weight_units"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+
+        <!-- Input fields -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+            <!-- Weight field -->
+            <EditText
+                android:id="@+id/edit_shop_price"
+                style="@style/EditorFieldStyle"
+                android:layout_width="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:hint="@string/hint_shop_weight"
+                android:inputType="numberDecimal" />
+
+            <!-- Units for weight (kg) -->
+            <TextView
+                android:id="@+id/label_weight_units"
+                style="@style/EditorUnitsStyle"
+                android:layout_alignBaseline="@+id/edit_shop_price"
+                android:layout_alignBottom="@+id/edit_shop_price"
+                android:layout_toEndOf="@+id/edit_shop_price"
+                android:text="@string/unit_shop_weight" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

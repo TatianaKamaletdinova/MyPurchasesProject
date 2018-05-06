@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f0785a</color>
+    <color name="colorPrimaryDark">#f09372</color>
+    <color name="colorAccent">#fdd7ad</color>
+    <!-- Primary color for the editor -->
+    <color name="editorColorPrimary">#F0785A</color>
+    <!-- Primary dark color for the editor -->
+    <color name="editorColorPrimaryDark">#f09372</color>
+</resources>
